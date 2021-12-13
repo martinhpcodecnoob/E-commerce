@@ -12,11 +12,13 @@ export default function Login() {
       .post("https://ecomerce-master.herokuapp.com/api/v1/login", datos)
       .then((response) => {
         window.localStorage.setItem("token", response.data.token);
+
         const config = {
           headers: {
             Authorization: `JWT ${response.data.token}`,
           },
         };
+
         axios
           .get("https://ecomerce-master.herokuapp.com/api/v1/user/me", config)
           .then((response) => {
@@ -31,9 +33,10 @@ export default function Login() {
       });
   };
 
-  //Al useform le enviamos la función que se va a ejecutar en el submit
-  //En este caso es la función que hará la petición para hacer login
   const { inputs, handleInput, handleSubmit } = useForm(login, {});
+
+  console.log("Esto es la funcion login ",login);
+  
   return (
     <div>
       <h1>Login</h1>

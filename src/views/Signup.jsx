@@ -5,17 +5,15 @@ import { useHistory } from "react-router";
 export default function Signup() {
   const history = useHistory();
   const registerUser = (datos) => {
-    //Se hace el post a la API para registrar usuario
-    //Se puede validar que la contraseña sea igual a confirmar contraseña
+    
     axios
       .post("https://ecomerce-master.herokuapp.com/api/v1/signup", datos)
       .then((response) => {
         if (response.status === 200) {
-          //activar la notificacion
-          //redireccionar al login
+          
           history.push("/login");
         } else {
-          //tener una notificacion del error
+          
         }
         console.log(response.data);
       })
