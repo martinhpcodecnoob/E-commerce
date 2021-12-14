@@ -2,13 +2,16 @@ import React from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
 import { useUserContext } from "../../context/userContext";
+import logtienda from "../../img/logtienda.png"
 const Navbar = () => {
   const context = useUserContext();
   return (
     <>
       <nav className="navbar">
         {/* <!-- LOGO --> */}
-        <div className="logo">Tienda virtual</div>
+        <div className="logo">
+          <img src={logtienda} alt="logo-tienda" width={"80%"} />
+        </div>
         {/* <!-- NAVIGATION MENU --> */}
         <ul className="nav-links">
           {/* <!-- USING CHECKBOX HACK --> */}

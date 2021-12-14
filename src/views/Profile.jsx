@@ -3,6 +3,7 @@ import withProtection from "../utils/withProtection";
 import { useUserContext } from "../context/userContext";
 const Profile = () => {
   const context = useUserContext();
+  console.log(context);
   return (
     <div>
       <h1>Mi perfil</h1>
