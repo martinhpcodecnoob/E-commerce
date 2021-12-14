@@ -22,18 +22,16 @@ const Item = () => {
   return (
     <div>
       <h1>Item</h1>
-      {}
-      {/* {productos.map((conteo)=>{
-        // <ItemImageCards
-        // key={i}
-        // imagenes={conteo.image}
-        // nombreProducto={conteo.product_name}
-        // precio={conteo.price}
-        // categoria={conteo.category}
-        // descripcion={conteo.description}/>
-        <h1>{}</h1>
-        console.log(conteo.product_name);
-      })} */}
+      
+      {productos.map((conteo, i)=>{
+        return(<ItemImageCards
+        key={i}
+        imagenes={conteo.image}
+        nombreProducto={conteo.product_name}
+        precio={conteo.price}
+        categoria={conteo.category}
+        descripcion={conteo.description}/>);
+      })}
       
     </div>
   );
