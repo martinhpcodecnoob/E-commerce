@@ -2,7 +2,8 @@ import React from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
 import { useUserContext } from "../../context/userContext";
-import logtienda from "../../img/logtienda.png"
+import logtienda from "../../img/logtienda.png";
+
 const Navbar = () => {
   const context = useUserContext();
   return (
