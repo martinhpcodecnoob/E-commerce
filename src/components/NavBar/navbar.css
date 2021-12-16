@@ -30,7 +30,7 @@
   }
   
   .menu li:hover {
-    background-color: #4c9e9e;
+    background-color: #000;
     border-radius: 5px;
     transition: 0.3s ease;
   }
@@ -45,7 +45,7 @@
   }
   
   .dropdown {
-    background-color: darkslategrey;
+    background-color: #000;
     padding: 1em 0;
     position: absolute;
     /*WITH RESPECT TO PARENT*/

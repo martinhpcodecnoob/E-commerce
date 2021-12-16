@@ -3,6 +3,8 @@ import "./navbar.css";
 import { Link } from "react-router-dom";
 import { useUserContext } from "../../context/userContext";
 import logtienda from "../../img/logtienda.png";
+import { Button, Container, Form, FormControl } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Navbar = () => {
   const context = useUserContext();
@@ -22,6 +24,19 @@ const Navbar = () => {
           </label>
           {/* <!-- NAVIGATION MENUS --> */}
           <div className="menu">
+            <li>
+              <Container>
+                <Form className="d-flex">
+                  <FormControl
+                    type="search"
+                    placeholder="Search"
+                    className="me-2"
+                    aria-label="Search"
+                  />
+                  <Button variant="outline-dark">Search</Button>
+                </Form>
+              </Container>
+            </li>
             <li>
               <Link to="/">Home</Link>
             </li>
