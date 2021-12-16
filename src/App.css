@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+.container-info {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding-top: 5em;
+}
+
+.my-auto-perfil {
+  text-align: left;
+}
+
+.pd-logo {
+  padding-left: 1em;
+}
+
+.list-group-info {
+  margin: auto;
+  width: 50%;
+  border: 3px solid rgb(228, 231, 231);
+  padding: 2em;
+  background-color: #f7f5fa;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.list-group-item,
+.list-group {
+  border: none !important;
+  padding-top: 1em;
+  background-color: #f7f5fa !important;
+}
