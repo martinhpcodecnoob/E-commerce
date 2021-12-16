@@ -24,19 +24,21 @@ const Navbar = () => {
           </label>
           {/* <!-- NAVIGATION MENUS --> */}
           <div className="menu">
-            <li id="search">
-              <Container>
-            <Form className="d-flex">
-        <FormControl
-          type="search"
-          placeholder="Search"
-          className="me-2"
-          aria-label="Search"
-        />
-        <Button variant="outline-dark">Search</Button>
-      </Form>
-          </Container>
-            </li>
+            <ul> 
+              <li id="search">
+                        <Container>
+                    <Form className="d-flex">
+                <FormControl
+                  type="search"
+                  placeholder="Search"
+                  className="me-2"
+                  aria-label="Search"
+                />
+                <Button variant="outline-dark">Search</Button>
+              </Form>
+                  </Container>
+              </li>
+            </ul>
             <li>
               <Link to="/">Home</Link>
             </li>

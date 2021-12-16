@@ -7,6 +7,13 @@
   pointer-events: none;
 }
 
+.container-home{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding-top: 5em;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

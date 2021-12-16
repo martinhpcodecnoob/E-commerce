@@ -42,26 +42,26 @@ export default function Login() {
       <h1>Login</h1>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="email">Email</label>
-          <input
-            id="email"
-            type="text"
-            name="email"
-            placeholder="Ingresa tu email"
-            onChange={handleInput}
-            value={inputs.email}
-          />
+              <label htmlFor="email">Email</label>
+              <input
+                id="email"
+                type="text"
+                name="email"
+                placeholder="Ingresa tu email"
+                onChange={handleInput}
+                value={inputs.email}
+              />
         </div>
         <div>
-          <label htmlFor="password">Contraseña</label>
-          <input
-            id="password"
-            type="password"
-            name="password"
-            placeholder="Ingresa tu contraseña"
-            onChange={handleInput}
-            value={inputs.password}
-          />
+            <label htmlFor="password">Contraseña</label>
+            <input
+              id="password"
+              type="password"
+              name="password"
+              placeholder="Ingresa tu contraseña"
+              onChange={handleInput}
+              value={inputs.password}
+            />
         </div>
         <button type="submit">Login</button>
       </form>
