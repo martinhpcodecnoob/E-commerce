@@ -24,7 +24,7 @@ const Navbar = () => {
           </label>
           {/* <!-- NAVIGATION MENUS --> */}
           <div className="menu">
-            <li>
+            <li id="search">
               <Container>
             <Form className="d-flex">
         <FormControl
