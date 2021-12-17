@@ -41,7 +41,16 @@
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  padding-top: 5em;
+  padding-top: 5em !important;
+}
+
+.container-login {
+  margin-top: 4em !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding-top: 2em !important;
+  border: none;
 }
 
 .my-auto-perfil {
@@ -52,7 +61,8 @@
   padding-left: 1em;
 }
 
-.list-group-info {
+.list-group-info,
+.container-login {
   margin: auto;
   width: 50%;
   border: 3px solid rgb(228, 231, 231);
@@ -62,8 +72,17 @@
 }
 
 .list-group-item,
-.list-group {
+.list-group,
+.login {
   border: none !important;
   padding-top: 1em;
   background-color: #f7f5fa !important;
+}
+
+.login {
+  border: none !important;
+}
+
+.btn-log {
+  margin-top: 1em !important;
 }
