@@ -11,6 +11,7 @@ import Login from "../views/Login";
 import Item from "../views/Item";
 import Navbar from "../components/NavBar";
 import Profile from "../views/Profile";
+import Carrito from "../views/Carrito"
 import { useUserContext } from "../context/userContext";
 const Logout = () => {
   window.localStorage.removeItem("token");
@@ -30,6 +31,7 @@ export default function Routes() {
         <Route exact path="/item" component={Item} />
         <Route exact path="/logout" component={Logout} />
         <Route exact path="/profile" component={Profile} />
+        <Route exact path="/carrito" component={Carrito} />
       </Switch>
     </Router>
   );

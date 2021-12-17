@@ -1,10 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
 import { useUserContext } from "../../context/userContext";
 import logtienda from "../../img/logtienda.png"
+
+import Search from "../../views/search";
+
+
 const Navbar = () => {
+
   const context = useUserContext();
+
+  
   return (
     <>
       <nav className="navbar">
@@ -21,6 +28,20 @@ const Navbar = () => {
           </label>
           {/* <!-- NAVIGATION MENUS --> */}
           <div className="menu">
+            {/* <li>
+              <Container>
+                <Form className="d-flex">
+                  <FormControl
+                    type="search"
+                    placeholder="Search"
+                    className="me-2"
+                    aria-label="Search"
+                  />
+                  <Button variant="outline-dark">Search</Button>
+                </Form>
+              </Container>
+            </li> */}
+
             <li>
               <Link to="/">Home</Link>
             </li>
@@ -32,7 +53,10 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/item">Productos</Link>
+                  <Link to="/item">Buscar Productos</Link>
+                </li>
+                <li>
+                  <Link to="/carrito">Carrito</Link>
                 </li>
                 <li>
                   <Link to="/logout">Logout</Link>

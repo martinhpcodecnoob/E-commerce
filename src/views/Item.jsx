@@ -5,7 +5,8 @@ import axios from "axios";
 import ItemImageCards from "./ItemImageCards";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {CardGroup, Container} from 'react-bootstrap';
+import {CardGroup, Container,Figure,FigureImage,Button,Row,Col} from 'react-bootstrap';
+import Search from "./search";
 
 const Item = () => {
 
@@ -25,18 +26,19 @@ const Item = () => {
   return (
     <div>
       <h1>Item</h1>
+      <Search/>
       <Container>
         <CardGroup>
           {productos.map((conteo, i)=>{
-        return(<ItemImageCards
-        key={i}
-        imagenes={conteo.image}
-        nombreProducto={conteo.product_name}
-        precio={conteo.price}
-        categoria={conteo.category}
-        descripcion={conteo.description}
-        marca={conteo.brand}/>);
-      })}
+            return(<ItemImageCards
+                    key={i}
+                    imagenes={conteo.image}
+                    nombreProducto={conteo.product_name}
+                    precio={conteo.price}
+                    categoria={conteo.category}
+                    descripcion={conteo.description}
+                    marca={conteo.brand}/>);
+                  })}
         </CardGroup>
       </Container>
       
