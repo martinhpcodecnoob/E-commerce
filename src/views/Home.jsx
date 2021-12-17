@@ -6,7 +6,7 @@ export default function Home() {
     <div>
   <Container className="container-home">
   <Row>
-  <Col  md="auto">
+  <Col md="auto">
       <h2>Compra online</h2>
       <h3 >Los mejores productos a los mejores precios </h3>
       <p>Encuentra accesorios, ropas, articulos para el hogar, tecnologia, etc.</p>
@@ -14,7 +14,7 @@ export default function Home() {
     Ver productos
   </Button>
   </Col>
-  <Col  md="auto">
+  <Col md="auto">
       <Figure>
   <Figure.Image
     width={400}

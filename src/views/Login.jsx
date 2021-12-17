@@ -3,6 +3,7 @@ import useForm from "../hooks/useForm";
 import axios from "axios";
 import { useHistory } from "react-router";
 import { useUserContext } from "../context/userContext";
+import {Container} from 'react-bootstrap';
 
 export default function Login() {
   const history = useHistory();
@@ -38,7 +39,8 @@ export default function Login() {
   console.log("Esto es la funcion login ",login);
   
   return (
-    <div>
+    <Container>
+      <div>
       <h1>Login</h1>
       <form onSubmit={handleSubmit}>
         <div>
@@ -65,6 +67,7 @@ export default function Login() {
         </div>
         <button type="submit">Login</button>
       </form>
-    </div>
+      </div>
+    </Container>
   );
 }
